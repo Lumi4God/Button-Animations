@@ -1,0 +1,134 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+h1{
+    text-align: center;
+    font-size: 3em;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(166, 166, 167);
+    width: 20%;
+    height: auto;
+    place-items: center;
+    margin: 5em 0em 0em 10em;
+
+}
+
+.one{
+    margin: 2em;
+    width: 20em;
+    height: 5em;
+    font-size: 1em;
+    transition: 2s;
+}
+.one:hover{
+    transform: rotateY(360deg);
+    background-color: blueviolet;
+    color: white;
+}
+.two{
+    margin: 2em;
+    width: 20em;
+    height: 5em;
+    font-size: 1em;
+}
+.two:hover{
+    background-color: rgb(223, 226, 43);
+    color: white;
+    transform: scale(2);
+
+    /*I CAN ALSO ACHIEVE THIS SIMPLY BY USING width & height*/
+    /* width: 30em;
+    height: 8em; */
+    transition: 2s;
+}
+
+.three{
+    margin: 2em;
+    width: 20em;
+    height: 5em;
+    font-size: 1em;
+    transition: 1s;
+}
+.three:hover{
+    background-color: rgb(95, 226, 43);
+    color: white;
+    border-radius: 50%;
+    height: 15em;
+    font-size: 1.2em;
+}
+
+.four{
+    margin: 2em;
+    width: 20em;
+    height: 5em;
+    font-size: 1em;
+    animation: box 2s infinite;
+    position: relative;
+    background-color: white;
+}
+@keyframes box {
+    from{
+        left:0px;
+        top: 0px
+    }
+    to{
+        background-color: green;
+        color: white;
+        left: 0px;
+        bottom: 60px;
+    }
+    
+}
+
+.five{
+    width: 20em;
+    height: 5em;
+    font-size: 1em;
+    margin: 2em;
+    background-color: thistle;
+    position: relative;
+    /* transition: 1s; */
+    /* animation: box1 2s infinite; */
+    
+}
+/* .five:hover{
+    transform: translateX(-100px);
+} */
+
+/* @keyframes box1 {
+   from{
+       left:0px;
+       right:0px;
+   } 
+   to{
+       right:0em;
+   }
+} */
+.child{
+    margin-left: 2.4em;
+    width: 15em;
+    height: 2.6em;
+    font-size: 1em;
+    transition: 8s;
+    position: absolute;
+    animation: child 2s infinite;
+    background-color: rgb(216, 212, 191);
+    position: absolute;
+    padding-top: 2em;
+}
+@keyframes  child{
+    from{
+        left:0px;
+        right:0px;
+    }
+    to{
+        left:0em;
+        top:0em;
+    }
+}
